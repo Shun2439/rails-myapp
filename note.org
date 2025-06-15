@@ -30,7 +30,7 @@ When I use rbenv in fish. It didn't work first. It was caused by I didn't run rb
   # correctly.
 #+end_src
 
-*** gem install in bash
+*** DONE gem install in bash
 
 #+begin_src text
   OpenSSL is not available.
@@ -44,7 +44,7 @@ maybe fixed?
 
 fixed!
 
-*** rbenv can't change version
+*** TODO rbenv can't change version
 
 How did you install ruby? With apt? So you have to uninstall it.
 
@@ -54,7 +54,7 @@ How did you install ruby? With apt? So you have to uninstall it.
   rbenv global <versions> # e.g.: rbenv global 3.1.3
 #+end_src
 
-** Check environment
+** Check the environment
 
 [[https://stackoverflow.com/a/19835458/20348296]]
 
@@ -76,7 +76,7 @@ How did you install ruby? With apt? So you have to uninstall it.
 
 Execute src_text{rails server}.
 
-* dev note
+* COMMENT dev note
 
 bilingual-shiritori inspired by vim-jp channels
 
@@ -87,6 +87,27 @@ bilingual-shiritori inspired by vim-jp channels
   ろんちょう / tone
   うらやましい / envious
 #+end_src
+
+** TODO What is src_ruby{<%= yield %>
+
+[[- https://zenn.dev/sudoukky/articles/4d8a0883b76add]]
+[[- https://qiita.com/tomokichi_ruby/items/fdf4369ad4aaf45c7303]]
+
+ベースは一緒だからsrc_ruby{<%= yield %>}で使い回せるのか？
+
+** TODO Codes
+
+*** new page
+
+#+begin_src ruby :tangle app/view/shiritori/index.html.erb
+      <h1> Shiritori <h1>
+      <div id="shiritori">
+	      </div>
+#+end_src
+
+* COMMENT Others
+
+<2023-09-25 Mon>
 
 * Reference
 

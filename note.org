@@ -1,0 +1,94 @@
+#+TITLE: rails_myapp
+#+AUTHOR: Shun2439
+#+DATE: <2025-06-13 Fri>
+
+* Setup
+
+[[https://railsgirls.jp/install/windows-wsl]]
+
+** install ruby
+
+#+begin_src shell
+  rbenv install 3.1.3
+  rbenv global 3.1.3
+#+end_src
+
+** bundle install
+
+Execute src_shell{bundle install}.
+
+** COMMENT Errors
+
+*** rbenv init
+
+When I use rbenv in fish. It didn't work first. It was caused by I didn't run rbenv init.
+
+#+begin_src shell
+  rbenv init # anywhere
+  # Then, I could run
+  # ruby -v
+  # correctly.
+#+end_src
+
+*** gem install in bash
+
+#+begin_src text
+  OpenSSL is not available.
+#+end_src
+
+I have no idea.
+
+- [[https://qiita.com/scivola/items/a8402aeb17b9d9afbe4b]]
+
+maybe fixed?
+
+fixed!
+
+*** rbenv can't change version
+
+How did you install ruby? With apt? So you have to uninstall it.
+
+#+begin_src shell
+  sudo apt remove -y ruby # Then
+  rbenv local <versions> # e.g.: rbenv local 3.1.3
+  rbenv global <versions> # e.g.: rbenv global 3.1.3
+#+end_src
+
+** Check environment
+
+[[https://stackoverflow.com/a/19835458/20348296]]
+
+#+NAME: Check rails
+#+begin_src shell
+  gem list|grep rails
+#+end_src
+
+#+begin_src shell
+  rbenv install --list-all
+#+end_src
+
+#+NAME: Install bundler
+#+begin_src shell
+  gem install bundler
+#+end_src
+
+* Run
+
+Execute src_text{rails server}.
+
+* dev note
+
+bilingual-shiritori inspired by vim-jp channels
+
+** Rules
+
+#+begin_src text
+  どろ / dirt
+  ろんちょう / tone
+  うらやましい / envious
+#+end_src
+
+* Reference
+
+[cite: https://railsgirls.jp/ @railsgirls]
+
